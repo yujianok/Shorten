@@ -1,0 +1,42 @@
+<html lang="en" data-ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico"/>
+
+    <title>Base62</title>
+
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+
+    <link rel="stylesheet" href="css/index.css"/>
+
+    <script src="components/angular/angular.min.js"></script>
+    <script src="components/angular-resource/angular-resource.min.js"></script>
+    <script src="components/angular-router/angular-route.min.js"></script>
+    <script src="components/angular-cookies/angular-cookies.min.js"></script>
+
+    <script src="js/index.js"></script>
+</head>
+
+<body data-ng-controller="mainPanelController">
+<div class="container">
+
+    <div class="masthead"></div>
+
+    <div class="jumbotron">
+        <h1>Search Bower Packages</h1>
+        <div class="input-group">
+            <input type="text" class="form-control" data-ng-model="shortenRequest.longUrl"/>
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button" data-ng-click="generateShortUrl()" >Go!</button>
+            </span>
+        </div>
+    </div>
+
+    <div class="row"></div>
+
+</div>
+
+</body>
+</html>
