@@ -1,10 +1,15 @@
 {
   "name": "Shorten",
   "version": "0.0.1",
+  "repository": {
+      "type": "git",
+      "url": "git://github.com/yujianok/Shorten.git"
+  },
   "dependencies": {
     "express": "4.0.0",
     "body-parser": "1.4.2",
     "elasticsearch": "2.2.0",
-    "nconf": "0.6.9"
+    "nconf": "0.6.9",
+    "base62": "0.1.1"
   }
 }
