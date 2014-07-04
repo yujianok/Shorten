@@ -57,11 +57,13 @@ app.controller("mainPanelController",
                ["$scope", "$restClient", "$pageContext",
                 function ($scope, $restClient, $pageContext) {
 
-    $scope.entity = {url: "basc"};
+    $scope.entity = {url: null};
     $scope.generateShortUrl = function() {
         $restClient.create($pageContext.currentUser, "shorten_request", $scope.entity, function(data) {
             console.log(JSON.stringify(data));
             $scope.entity.url = "http://" + window.location.host + "/" + data.shortUri;
+        }, function(error) {
+            $scope.error = error.data;
         });
     }
 }]);

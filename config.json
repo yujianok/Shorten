@@ -10,5 +10,5 @@
 
     "es_index" : "test",
 
-    "domain_name": "base62.com"
+    "domain_name": "localhost"
 }
