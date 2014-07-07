@@ -68,7 +68,7 @@
                         </div>
 
                         <div class="alert-customize" role="alert" data-ng-if="error">
-                            <strong>Error:</strong> {{error}}
+                            <strong>错误:</strong> {{error}}
                         </div>
 
                         <div class="btn-toolbar">
@@ -77,7 +77,7 @@
                             </div>
 
                             <div class="btn-group btn-group-lg">
-                                <button type="button" class="btn btn-default">&nbsp;还原地址&nbsp;</button>
+                                <button type="button" class="btn btn-default" data-ng-click="revertUrl()">&nbsp;还原地址&nbsp;</button>
                             </div>
                         </div>
                     </form>
